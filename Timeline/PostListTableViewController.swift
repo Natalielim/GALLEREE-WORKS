@@ -9,10 +9,9 @@
 import UIKit
 import CoreData
 
-class PostListTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, UISearchResultsUpdating {
+class PostListTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
     var fetchedResultsController: NSFetchedResultsController?
-    var searchController: UISearchController?
     
     override func viewDidLoad() {
         
@@ -20,14 +19,7 @@ class PostListTableViewController: UITableViewController, NSFetchedResultsContro
         
         setUpFetchedResultsController()
         
-        setUpSearchController()
-        
         requestFullSync()
-
-        // hides search bar
-        if tableView.numberOfRowsInSection(0) > 0 {
-            tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: .Top, animated: false)
-        }
     }
     
     @IBAction func refreshControlActivated(sender: UIRefreshControl) {
@@ -142,33 +134,6 @@ class PostListTableViewController: UITableViewController, NSFetchedResultsContro
     }
     
     
-    // MARK: - Search Controller
-    
-    func setUpSearchController() {
-        
-        let resultsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SearchResultsTableViewController")
-        
-        searchController = UISearchController(searchResultsController: resultsController)
-        searchController?.searchResultsUpdater = self
-        searchController?.searchBar.sizeToFit()
-        searchController?.hidesNavigationBarDuringPresentation = true
-        tableView.tableHeaderView = searchController?.searchBar
-        
-        definesPresentationContext = true
-    }
-    
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
-        
-        if let resultsViewController = searchController.searchResultsController as? SearchResultsTableViewController,
-            let searchTerm = searchController.searchBar.text?.lowercaseString,
-            let posts = fetchedResultsController?.fetchedObjects as? [Post] {
-            
-            resultsViewController.resultsArray = posts.filter({$0.matchesSearchTerm(searchTerm)})
-            resultsViewController.tableView.reloadData()
-        }
-    }
-
-    
     // MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -183,20 +148,6 @@ class PostListTableViewController: UITableViewController, NSFetchedResultsContro
             }
         }
         
-        if segue.identifier == "toPostDetailFromSearch" {
-            if let detailViewController = segue.destinationViewController as? PostDetailTableViewController,
-                let sender = sender as? PostTableViewCell,
-                let selectedIndexPath = (searchController?.searchResultsController as? SearchResultsTableViewController)?.tableView.indexPathForCell(sender),
-                let searchTerm = searchController?.searchBar.text?.lowercaseString,
-                let posts = fetchedResultsController?.fetchedObjects?.filter({ $0.matchesSearchTerm(searchTerm) }) as? [Post] {
-                
-                let post = posts[selectedIndexPath.row]
-                
-                detailViewController.post = post
-            }
-        }
     }
-    @IBOutlet weak var titleText: UILabel!
-
 }
 

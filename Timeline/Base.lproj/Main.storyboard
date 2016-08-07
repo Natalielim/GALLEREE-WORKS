@@ -112,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="lbZ-DI-M7Q">
-                            <rect key="frame" x="0.0" y="64" width="600" height="370"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="370"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cAt-7x-6hA">
@@ -130,7 +130,7 @@
                             </constraints>
                         </view>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="oRi-cP-VGf">
-                            <rect key="frame" x="0.0" y="519" width="600" height="44"/>
+                            <rect key="frame" x="0.0" y="455" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <items>
                                 <barButtonItem style="plain" systemItem="flexibleSpace" id="SQE-ni-GBE"/>
@@ -146,7 +146,7 @@
                         </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" textLabel="bBG-jm-rm1" detailTextLabel="oLh-DI-Tt8" rowHeight="57" style="IBUITableViewCellStyleSubtitle" id="2j4-hr-kfV">
-                                <rect key="frame" x="0.0" y="462" width="600" height="57"/>
+                                <rect key="frame" x="0.0" y="398" width="600" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2j4-hr-kfV" id="bvq-Mk-wEP">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="56.5"/>
@@ -475,6 +475,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.3921568627" green="0.054901960780000002" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="0.3921568627" green="0.054901960780000002" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -645,7 +649,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYY-K3-UpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1269" y="-28"/>
+            <point key="canvasLocation" x="1287" y="-50"/>
         </scene>
     </scenes>
     <resources>
@@ -656,6 +660,6 @@
         <image name="plusprofileicon" width="528" height="528"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EvV-aO-22l"/>
+        <segue reference="tbB-J6-5LE"/>
     </inferredMetricsTieBreakers>
 </document>

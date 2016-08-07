@@ -341,7 +341,7 @@
 						DevelopmentTeam = QF7DSRY6RV;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iCloud = {
 								enabled = 1;

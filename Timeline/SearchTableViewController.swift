@@ -25,9 +25,9 @@ class SearchTableViewController: UITableViewController, NSFetchedResultsControll
         requestFullSync()
         
         // hides search bar
-        if tableView.numberOfRowsInSection(0) > 0 {
-            tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: .Top, animated: false)
-        }
+        //if tableView.numberOfRowsInSection(0) > 0 {
+          //  tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: .Top, animated: false)
+      //  }
     }
     
     @IBAction func refreshControlActivated(sender: UIRefreshControl) {
