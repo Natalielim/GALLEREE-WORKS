@@ -364,7 +364,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCa-FA-REP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942" y="675"/>
+            <point key="canvasLocation" x="2054" y="675"/>
         </scene>
         <!--Profile-->
         <scene sceneID="zNS-ff-qJ3">
@@ -616,6 +616,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="postImageView" destination="tjd-1U-j9A" id="okF-Lw-tne"/>
+                                    <segue destination="e8t-4a-dJD" kind="show" identifier="toPostDetail" id="oLT-uh-5Nt"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -638,6 +639,9 @@
                             <action selector="refreshControlActivated:" destination="FCa-vi-AuZ" eventType="valueChanged" id="RkS-AH-EwL"/>
                         </connections>
                     </refreshControl>
+                    <connections>
+                        <segue destination="e8t-4a-dJD" kind="show" identifier="toPostDetailFromSearch" id="tbB-J6-5LE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYY-K3-UpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -652,6 +656,6 @@
         <image name="plusprofileicon" width="528" height="528"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="usP-Ct-O2G"/>
+        <segue reference="EvV-aO-22l"/>
     </inferredMetricsTieBreakers>
 </document>

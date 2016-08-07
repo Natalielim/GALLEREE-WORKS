@@ -139,14 +139,14 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
    /* @IBAction func commentButtonTapped(sender: AnyObject) {
         
         presentCommentAlert()
-    }
+    }*/
     
     @IBAction func shareButtonTapped(sender: AnyObject) {
         
         presentActivityViewController()
     }
     
-    @IBAction func followPostButtonTapped(sender: AnyObject) {
+  /*  @IBAction func followPostButtonTapped(sender: AnyObject) {
         
         guard let post = post else { return }
         PostController.sharedController.togglePostCommentSubscription(post) { (success, isSubscribed, error) in
@@ -178,7 +178,7 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
         
         presentViewController(alertController, animated: true, completion: nil)
     }
-    
+    */
     func presentActivityViewController() {
         
         guard let photo = post?.photo,
@@ -189,5 +189,4 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
         
         presentViewController(activityViewController, animated: true, completion: nil)
     }
-    */
 }
