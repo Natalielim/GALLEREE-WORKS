@@ -14,6 +14,12 @@ class SearchTableViewController: UITableViewController, NSFetchedResultsControll
     var fetchedResultsController: NSFetchedResultsController?
     var searchController: UISearchController?
     
+  /*  override func viewWillLoad() {
+        super.viewWillLoad()
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }*/
+
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -23,11 +29,10 @@ class SearchTableViewController: UITableViewController, NSFetchedResultsControll
         setUpSearchController()
         
         requestFullSync()
-        
-        // hides search bar
-        //if tableView.numberOfRowsInSection(0) > 0 {
-          //  tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: .Top, animated: false)
-      //  }
+      
+        //self.navigationController?.setNavigationBarHidden(false, animated: true)
+
+
     }
     
     @IBAction func refreshControlActivated(sender: UIRefreshControl) {
@@ -151,7 +156,7 @@ class SearchTableViewController: UITableViewController, NSFetchedResultsControll
         searchController = UISearchController(searchResultsController: resultsController)
         searchController?.searchResultsUpdater = self
         searchController?.searchBar.sizeToFit()
-        searchController?.hidesNavigationBarDuringPresentation = true
+        //searchController?.hidesNavigationBarDuringPresentation = true
         tableView.tableHeaderView = searchController?.searchBar
         
         definesPresentationContext = true
@@ -196,7 +201,5 @@ class SearchTableViewController: UITableViewController, NSFetchedResultsControll
             }
         }
     }
-    @IBOutlet weak var titleText: UILabel!
-    
 }
 

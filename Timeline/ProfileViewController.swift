@@ -12,16 +12,16 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
     
 //commenting out all code for picking out profile image --> there is a static image view , same for all users
     
-   /* @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        */
-      /*  imageView.layer.borderWidth = 10
+        
+        imageView.layer.borderWidth = 8
         imageView.layer.masksToBounds = false
         imageView.layer.borderColor = UIColor.whiteColor().CGColor
         imageView.layer.cornerRadius = imageView.frame.height/2
-        imageView.clipsToBounds = true*/
+        imageView.clipsToBounds = true
     }
     
   /*  let imagePicker = UIImagePickerController()
@@ -57,5 +57,5 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
 
  /*   @IBOutlet weak var nameTextField: UITextField!
 }*/
-
+}
    
