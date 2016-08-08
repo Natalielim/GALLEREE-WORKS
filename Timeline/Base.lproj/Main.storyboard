@@ -40,9 +40,9 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ub1-wS-DCB">
-                                            <rect key="frame" x="55" y="-3" width="535" height="306"/>
+                                            <rect key="frame" x="55" y="-41" width="535" height="382"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="Ub1-wS-DCB" secondAttribute="height" multiplier="7:4" id="0rQ-0X-TLa"/>
+                                                <constraint firstAttribute="width" secondItem="Ub1-wS-DCB" secondAttribute="height" multiplier="7:5" id="0rQ-0X-TLa"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
@@ -116,9 +116,9 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cAt-7x-6hA">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="342.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="428.5"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" secondItem="cAt-7x-6hA" secondAttribute="height" multiplier="7:4" id="fDc-V6-klu"/>
+                                        <constraint firstAttribute="width" secondItem="cAt-7x-6hA" secondAttribute="height" multiplier="7:5" id="fDc-V6-klu"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
@@ -183,7 +183,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yaz-k3-uLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976" y="1375"/>
+            <point key="canvasLocation" x="2054" y="1375"/>
         </scene>
         <!--Add Moment-->
         <scene sceneID="swr-eU-mAz">
@@ -298,7 +298,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFv-bJ-EKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976" y="2096"/>
+            <point key="canvasLocation" x="2054" y="2096"/>
         </scene>
         <!--Search Results Table View Controller-->
         <scene sceneID="e7m-39-IS3">
@@ -564,7 +564,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWd-k1-uWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1149" y="675"/>
+            <point key="canvasLocation" x="1263" y="669"/>
         </scene>
         <!--Add Post-->
         <scene sceneID="Dga-xv-2a5">
@@ -689,10 +689,10 @@
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
-                                            <exclude reference="8U5-l6-6UC"/>
                                             <exclude reference="5YU-1P-mbY"/>
-                                            <exclude reference="hMf-Rk-O7C"/>
+                                            <exclude reference="8U5-l6-6UC"/>
                                             <exclude reference="ewg-aM-m98"/>
+                                            <exclude reference="hMf-Rk-O7C"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -723,7 +723,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYY-K3-UpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2199" y="-50"/>
+            <point key="canvasLocation" x="2054" y="-40"/>
         </scene>
     </scenes>
     <resources>
@@ -734,6 +734,6 @@
         <image name="clearsearch" width="35" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tbB-J6-5LE"/>
+        <segue reference="usP-Ct-O2G"/>
     </inferredMetricsTieBreakers>
 </document>
