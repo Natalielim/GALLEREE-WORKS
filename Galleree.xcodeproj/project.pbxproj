@@ -58,6 +58,7 @@
 		311909E51D529A8000D291E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		31928A3C1D53C4BA00668B1E /* Galleree.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Galleree.entitlements; path = ../Galleree.entitlements; sourceTree = "<group>"; };
 		31BF469A1D57B81500967F68 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		31BF47271D5A9C4E00967F68 /* aps_development.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps_development.cer; sourceTree = SOURCE_ROOT; };
 		681DF3CD1D0733EB00A4AB75 /* SyncableObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SyncableObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		681DF3CE1D0733EB00A4AB75 /* SyncableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncableObject.swift; sourceTree = "<group>"; };
 		682FA4D31CF5427500B81932 /* Galleree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Galleree.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +233,7 @@
 				31928A3C1D53C4BA00668B1E /* Galleree.entitlements */,
 				682FA4DD1CF5427500B81932 /* Assets.xcassets */,
 				682FA4E21CF5427500B81932 /* Info.plist */,
+				31BF47271D5A9C4E00967F68 /* aps_development.cer */,
 			);
 			name = Resources;
 			path = Timeline;

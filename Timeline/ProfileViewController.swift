@@ -10,9 +10,12 @@ import UIKit
 
 class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-//commenting out all code for picking out profile image --> there is a static image view , same for all users
-    
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var occupationTextField: UITextField!
+    @IBOutlet weak var aboutMe: UITextView!
+    
+    let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +25,13 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         imageView.layer.borderColor = UIColor.whiteColor().CGColor
         imageView.layer.cornerRadius = imageView.frame.height/2
         imageView.clipsToBounds = true
+        
+        imagePicker.delegate = self
     }
-    
-  /*  let imagePicker = UIImagePickerController()
     
     // MARK: - Capture Image
     
     @IBAction func butLibraryAction(sender: AnyObject) {
-        
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .PhotoLibrary
         
@@ -39,12 +41,12 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
     }
     
     @IBAction func butPhotoAction(sender: AnyObject) {
-    
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .Camera
         
         presentViewController(imagePicker, animated: true, completion: nil)
     }
+    
     
     // Mark: - Update Image View
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -53,9 +55,18 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
             imageView.image = pickedImage
         }
         dismissViewControllerAnimated(true, completion: nil)
-    }*/
-
- /*   @IBOutlet weak var nameTextField: UITextField!
-}*/
-}
+    }
+    
+    @IBAction func hideKeyboard(sender: AnyObject) {
+        nameTextField.resignFirstResponder()
+        occupationTextField.resignFirstResponder()
+        aboutMe.resignFirstResponder()
+    }
+    
+    @IBAction func hideKeyboardButton(sender: AnyObject) {
+        nameTextField.resignFirstResponder()
+        occupationTextField.resignFirstResponder()
+        aboutMe.resignFirstResponder()
+    }
+  }
    
