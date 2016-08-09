@@ -24,7 +24,7 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         imageView.clipsToBounds = true
     }
     
-  /*  let imagePicker = UIImagePickerController()
+    let imagePicker = UIImagePickerController()
     
     // MARK: - Capture Image
     
@@ -38,13 +38,13 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
     
-    @IBAction func butPhotoAction(sender: AnyObject) {
+   // @IBAction func butPhotoAction(sender: AnyObject) {
     
-        imagePicker.allowsEditing = false
-        imagePicker.sourceType = .Camera
+     //   imagePicker.allowsEditing = false
+       // imagePicker.sourceType = .Camera
         
-        presentViewController(imagePicker, animated: true, completion: nil)
-    }
+        //presentViewController(imagePicker, animated: true, completion: nil)
+    //}
     
     // Mark: - Update Image View
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -53,9 +53,12 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
             imageView.image = pickedImage
         }
         dismissViewControllerAnimated(true, completion: nil)
-    }*/
-
- /*   @IBOutlet weak var nameTextField: UITextField!
-}*/
+    }
+    
+    @IBOutlet weak var nameText: UITextField!
+    
+    @IBOutlet weak var occupationText: UITextField!
+    
+    @IBOutlet weak var aboutMe: UITextView!
 }
    
