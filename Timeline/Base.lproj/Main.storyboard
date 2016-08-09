@@ -80,7 +80,9 @@
                             <outlet property="delegate" destination="gK2-fp-nri" id="c6h-V6-eQr"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="khd-gn-aXP"/>
+                    <tabBarItem key="tabBarItem" title="" image="clearhomegalleree" id="khd-gn-aXP">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Galleree" id="deT-A6-ZRe">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="yNp-Op-9FN">
                             <color key="tintColor" red="0.3921568627" green="0.054901960780000002" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
@@ -129,7 +131,7 @@
                                 <constraint firstItem="cAt-7x-6hA" firstAttribute="top" secondItem="lbZ-DI-M7Q" secondAttribute="top" id="Red-ek-Fzp"/>
                             </constraints>
                         </view>
-                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="oRi-cP-VGf">
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="oRi-cP-VGf">
                             <rect key="frame" x="0.0" y="508" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <items>
@@ -142,6 +144,7 @@
                                 </barButtonItem>
                                 <barButtonItem style="plain" systemItem="flexibleSpace" id="pcy-pH-qac"/>
                             </items>
+                            <color key="tintColor" red="0.3921568627" green="0.054901960780000002" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="barTintColor" red="0.3921568627" green="0.054901960780000002" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                         </toolbar>
                         <prototypes>
@@ -642,7 +645,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8a-fl-aOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818" y="2113"/>
+            <point key="canvasLocation" x="818" y="2047"/>
         </scene>
         <!--Search Table View Controller-->
         <scene sceneID="dN6-9y-lfP">
@@ -747,6 +750,6 @@
         <image name="clearsearch" width="35" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tbB-J6-5LE"/>
+        <segue reference="EvV-aO-22l"/>
     </inferredMetricsTieBreakers>
 </document>
