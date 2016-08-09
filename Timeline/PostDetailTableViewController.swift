@@ -80,7 +80,7 @@ class PostDetailTableViewController: UITableViewController, NSFetchedResultsCont
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
+    
         let cell = tableView.dequeueReusableCellWithIdentifier("commentCell", forIndexPath: indexPath)
         
         if let comment = fetchedResultsController?.objectAtIndexPath(indexPath) as? Comment {
