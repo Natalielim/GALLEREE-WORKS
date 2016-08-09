@@ -29,6 +29,11 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         imagePicker.delegate = self
     }
     
+<<<<<<< HEAD
+=======
+    let imagePicker = UIImagePickerController()
+    
+>>>>>>> origin/master
     // MARK: - Capture Image
     
     @IBAction func butLibraryAction(sender: AnyObject) {
@@ -40,12 +45,19 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         self.presentViewController(imagePicker, animated: true, completion: nil)
     }
     
+<<<<<<< HEAD
     @IBAction func butPhotoAction(sender: AnyObject) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .Camera
+=======
+   // @IBAction func butPhotoAction(sender: AnyObject) {
+    
+     //   imagePicker.allowsEditing = false
+       // imagePicker.sourceType = .Camera
+>>>>>>> origin/master
         
-        presentViewController(imagePicker, animated: true, completion: nil)
-    }
+        //presentViewController(imagePicker, animated: true, completion: nil)
+    //}
     
     
     // Mark: - Update Image View
@@ -57,6 +69,7 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+<<<<<<< HEAD
     @IBAction func hideKeyboard(sender: AnyObject) {
         nameTextField.resignFirstResponder()
         occupationTextField.resignFirstResponder()
@@ -69,4 +82,12 @@ class Profile: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         aboutMe.resignFirstResponder()
     }
   }
+=======
+    @IBOutlet weak var nameText: UITextField!
+    
+    @IBOutlet weak var occupationText: UITextField!
+    
+    @IBOutlet weak var aboutMe: UITextView!
+}
+>>>>>>> origin/master
    
